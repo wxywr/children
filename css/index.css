@@ -1,0 +1,39 @@
+﻿.customDiv
+{
+/*border-left:1px gray solid;
+border-right:1px gray solid;*/
+/*border-bottom:1px gray solid;*/
+border-top:3px #fff solid;
+padding-bottom: 0;
+/*padding-top: 10px;*/
+padding-left:2px;
+padding-right:2px;
+border-radius: 8px;
+}
+.customDate td
+{
+border-bottom:2px #75BA28 solid;
+width:80px;
+height:55px;
+text-align: center;
+padding: 15px 0;
+font-size: 16px;
+border-right:1px #75BA28 solid;
+}
+.customChoose
+{
+border-bottom:0px #75BA28 solid !important;
+border-top:4px #75BA28 solid !important;
+border-left:2px #75BA28 solid !important;
+border-right:3px #75BA28 solid !important;
+}
+.customLeft
+{
+border-left:0px gray solid !important;
+width:30px !important;
+}
+.customRight
+{
+border-right:0px gray solid !important;
+width:30px !important;
+}

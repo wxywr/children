@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body style="background: url(img/back.png) no-repeat;background-size: 100% 100%;">
+	<div class="list-head">
+		<div class="l fl">幼儿情况日反馈表</div>
+		<div class="r fr">
+			<span>新用户</span>
+			<a href="login.html">退出</a>
+		</div>
+	</div>
+	<div class="layout">
+		<div class="add-stu">
+			<div class="top">添 加 学 生</div>
+			<div class="cont">
+				<ul class="add-l fl">
+					<li>班级</li>
+					<li>姓名</li>
+					<li>家长联系方式</li>
+				</ul>
+				<ul class="add-r fl">
+					<li>A班</li>
+					<li><input type="text" class="names" name="name"></li>
+					<li><input type="tel" class="contact" name="phone"></li>
+				</ul>
+			</div>
+			<div class="button">提 交</div>
+		</div>
+	</div>
+	<div class="list-wrap">
+		<div class="wrap-l fl">
+			<div class="title">
+				<h2>学 生 列 表</h2>
+				<div class="add">添加</div>
+			</div>
+			<ul id="ul-a">
+				<li class="on">张三<i></i></li>
+				<li>李四<i></i></li>
+				<li>王五<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+				<li>姓名<i></i></li>
+			</ul>
+		</div>
+		<div class="wrap-r fl">
+			<div class="gallery-thumbs">
+			    <!-- ================ -->
+				<div class="customDiv">
+					<div style="display:none" id="HiddenDate"></div>
+					<table class="customDate" style="width:100%;height: 100%;" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="30" class="customLeft" onclick="TurnLeft()"><img src="img/left_ico.png" alt=""></td>
+						
+						<td id="custom2" onclick="Choose(this)">&nbsp;</td>
+						<td id="custom3" onclick="Choose(this)">&nbsp;</td>
+						<td id="custom4" onclick="Choose(this)">&nbsp;</td>
+						<td id="custom5" onclick="Choose(this)">&nbsp;</td>
+						<td id="custom6" onclick="Choose(this)">&nbsp;</td>
+						<td id="custom7" onclick="Choose(this)">&nbsp;</td><td id="custom1" class="customChoose" onclick="Choose(this)">&nbsp;</td>
+						<td width="30" class="customRight" onclick="TurnRight()"><img src="img/right_ico.png" alt=""></td>
+					</tr>
+					</table>
+				</div>
+
+				<!-- ====================== -->
+			</div>
+			<div class="gallery-top">
+		        <div class="tops over">
+		            		<div class="bj fl">
+			            		<span class="tit">班级</span>
+			            		<span class="info">天天班</span>
+			            	</div>
+			            	<div class="xm fl">
+			            		<span class="tit">姓名</span>
+			            		<span class="info">张三</span>
+			            	</div>
+			            	<div class="lx fl">
+			            		<span class="tit">家长联系方式</span>
+			            		<span class="info zj">15001111111</span>
+			            	</div>
+			            	<div class="xg fl xiu"><span>修改</span></div>
+		        </div>
+		        <div class="dessert over">
+		            		<div class="des-l fl"><h3>点心</h3></div>
+		            		<div class="des-r fl">
+		            			<ul class="sw over">
+		            				<li class="fl wid sh">上午</li>
+		            				<li class="fl fo"><input type="text" name="morning" class="food"></li>
+		            				<li class="fl eat">我吃了多少？</li>
+		            				<li class="fl wid"><input type="radio" id="all" name="am"> <label for="all">所有</label></li>
+		            				<li class="fl wid"><input type="radio" id="big" name="am"> <label for="big">大部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="small" name="am"> <label for="small">小部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="no" name="am"> <label for="no">没吃</label></li>
+		            			</ul>
+		            			<ul class="xw over">
+		            				<li class="fl wid sh">下午</li>
+		            				<li class="fl fo"><input type="text" name="afternoon" class="food"></li>
+		            				<li class="fl eat">我吃了多少？</li>
+		            				<li class="fl wid"><input type="radio" id="alls" name="pm"> <label for="alls">所有</label></li>
+		            				<li class="fl wid"><input type="radio" id="bigs" name="pm"> <label for="bigs">大部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="smalls" name="pm"> <label for="smalls">小部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="nos" name="pm"> <label for="nos">没吃</label></li>
+		            			</ul>
+		            		</div>
+		        </div>
+		        <div class="lunch over">
+		            		<div class="lun-l fl"><h3>午餐</h3></div>
+		            		<div class="lun-r fl">
+		            			<ul class="over four">
+		            				<li class="fl wid sh gre">主食</li>
+		            				<li class="fl fo"><input type="text" name="zhu" class="food"></li>
+		            				<li class="fl eat gre">我吃了多少？</li>
+		            				<li class="fl wid"><input type="radio" id="al" name="pm"> <label for="al">所有</label></li>
+		            				<li class="fl wid"><input type="radio" id="bg" name="pm"> <label for="bg">大部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="sl" name="pm"> <label for="sl">小部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="non" name="pm"> <label for="non">没吃</label></li>
+		            			</ul>
+		            			<ul class="over four">
+		            				<li class="fl wid sh gre">蔬菜</li>
+		            				<li class="fl fo"><input type="text" name="shu" class="food"></li>
+		            				<li class="fl eat gre">我吃了多少？</li>
+		            				<li class="fl wid"><input type="radio" id="alls" name="pm"> <label for="alls">所有</label></li>
+		            				<li class="fl wid"><input type="radio" id="bigs" name="pm"> <label for="bigs">大部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="smalls" name="pm"> <label for="smalls">小部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="nos" name="pm"> <label for="nos">没吃</label></li>
+		            			</ul>
+		            			<ul class="over four">
+		            				<li class="fl wid sh gre">汤</li>
+		            				<li class="fl fo"><input type="text" name="soup" class="food"></li>
+		            				<li class="fl eat gre">我吃了多少？</li>
+		            				<li class="fl wid"><input type="radio" id="suo" name="pm"> <label for="suo">所有</label></li>
+		            				<li class="fl wid"><input type="radio" id="da" name="pm"> <label for="da">大部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="sm" name="pm"> <label for="sm">小部分</label></li>
+		            				<li class="fl wid"><input type="radio" id="noo" name="pm"> <label for="noo">没吃</label></li>
+		            			</ul>
+		            			<div class="jyi four over"><span class="gre">老师的建议</span><input type="text" name="sug"></div>
+		            		</div>
+		        </div>
+		        <div class="wash">
+		            		<h4>盥洗</h4>
+		            		<ul class="over">
+		            			<li class="fl"><input type="radio" id="xi-a" name="wa"> <label for="xi-a">我是自己去洗手间</label></li>
+		            			<li class="fl"><input type="radio" id="xi-b" name="wa"> <label for="xi-b">我在老师的帮助下去洗手间</label></li>
+		            			<li class="fl"><input type="radio" id="xi-c" name="wa"> <label for="xi-c">我没有去洗手间</label></li>
+		            			<li class="fl">我换了<input type="text" class="ci">次尿布</li>
+		            		</ul>
+		        </div>
+		        <div class="with">
+		            		<h4>社会交往</h4>
+		            		<ul class="over">
+		            			<li class="fl"><input type="radio" id="jw-a" name="jw"> <label for="jw-a">我在教室里面和老师进行互动</label></li>
+		            			<li class="fl"><input type="radio" id="jw-b" name="jw"> <label for="jw-b">我很有耐心的和小朋友在一起</label></li>
+		            			<li class="fl"><input type="radio" id="jw-c" name="jw"> <label for="jw-c">我和好朋友一起分享</label></li>
+		            		</ul>
+		        </div>
+		        <div class="teacher">
+		            		<h4>老师的建议：明天来学校要带这些</h4>
+		            		<ul class="over">
+		            			<li class="fl"><input type="radio" id="teac-a" name="teac"> <label for="teac-a">带一套换洗的衣服</label></li>
+		            			<li class="fl"><input type="radio" id="teac-b" name="teac"> <label for="teac-b">带尿片</label></li>
+		            			<li class="fl"><input type="radio" id="teac-c" name="teac"> <label for="teac-c">带小毛巾</label></li>
+		            			<li class="fl"><input type="radio" id="teac-c" name="teac"> <label for="teac-c">带湿纸巾</label></li>
+		            		</ul>
+		        </div>
+		        <input type="button" value="提交" class="Submit">
+  			</div>
+		</div>
+	</div>
+	<div class="Popup">
+		<div class="add-stu">
+			<div class="top">修 改 学 生 信 息</div>
+			<div class="cont">
+				<ul class="add-l fl">
+					<li>班级</li>
+					<li>姓名</li>
+					<li>家长联系方式</li>
+				</ul>
+				<ul class="add-r fl">
+					<li>A班</li>
+					<li>张三</li>
+					<li><input type="tel" class="contact" name="pho"></li>
+				</ul>
+			</div>
+			<div class="button">提 交</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
